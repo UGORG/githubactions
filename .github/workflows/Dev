@@ -1,0 +1,10 @@
+name: GitHub Actions Dev
+
+on: push
+jobs:
+  builds:
+      runs-on: windows-latest
+      steps:
+        - uses: actions/checkout@v3
+        - name: GitHub Actions DEV
+          run: echo "This build successfully executed"
